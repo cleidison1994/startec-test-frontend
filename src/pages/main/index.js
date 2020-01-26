@@ -20,9 +20,8 @@ export default class Main extends Component{
 
         const {docs, ...productPaginate} = response.data;
 
-        this.setState({products:docs ,productPaginate, page});
+        this.setState({products:docs,productPaginate, page});
     }
-
     nextPage = () =>{
         const { page ,productPaginate } = this.state;
 
